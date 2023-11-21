@@ -1,0 +1,80 @@
+html,body {
+	height: 50%;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+body.my-login-page {
+	background-color: #f7f9fb;
+	font-size: 14px;
+}
+
+.my-login-page .container {
+	height: 30vh;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-right: 20px; 
+
+}
+
+.my-login-page .row-navbar {
+	position: absolute;
+}
+
+.content {
+	width: 100%;
+	font-size: 20px;
+	max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.card-body {
+	width: 60vh;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.my-login-page .card-body-image {
+	height: 100%;
+	padding-left: 200px;
+}
+
+.my-login-page .title {
+	padding-bottom: 30px;
+}
+
+.my-login-page .card {
+	border-color: transparent;
+	box-shadow: 0 4px 8px rgba(0,0,0,.05);
+}
+
+.my-login-page .card.fat {
+	padding: 10px;
+}
+
+.my-login-page .form-control {
+	border-width: 2.3px;
+}
+
+.my-login-page .form-group label {
+	width: 100%;
+}
+
+
+.my-login-page .btn.btn-block {
+	padding: 12px 10px;
+}
+
+button .btn .btn-block{
+    background-color : #13884C;
+}
+
+.my-login-page .btn.btn-block{
+    color : white;
+}
+
+
+
+
