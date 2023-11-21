@@ -2,28 +2,75 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="author" content="Kodinger">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Registration Page</title>
-	<link rel="stylesheet" type="text/css" href="../css/registrasi.css">
+	<title>Login Page</title>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
 </head>
-    
-<body class="register-page">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="navbar ">
-                    <img class="image" src="img/image 3.png" alt="logo">
+
+<body class="registration-page">
+	<div class="container">
+		<div class="position-absolute top-0 end-0">
+			<img class="image" src="../img/image3.png" alt="logo">
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row justify-content-center align-items-center min-vh-100">
+            <div class="col-lg-6 mb-4">
+                <div class="d-flex justify-content-start">
+                    <div class="card-body-image">
+                        <img src="../img/pana.png" alt="logo">
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row">
+			<div class="col-lg-6">
 
-        </div>
+				<div class="card-text">
+					<h4 class="card-title fs-1 mb-2">Account Register</h4>
+				</div>
+			
+					<div class="card mt-5">
 
-    </div>
-    
+						<div class="card-body">
+							<form method="POST" class="my-login-validation" novalidate="">
+
+								<div class="mb-3">
+									<label for="fullname" class="form-label fs-5 mb-3">Full Name</label>
+									<input type="text" class="form-control" id="fullname" name="fullname" required>
+								</div>
+
+								<div class="mb-3">
+									<label for="email" class="form-label fs-5 mb-3">Email Address</label>
+									<input type="email" class="form-control" id="email" name="email" required>
+								</div>
+
+                                <div class="mb-3">
+                                    <label for="dob" class="form-label fs-5 mb-3">Date of Birth</label>
+                                    <input type="date" class="form-control" id="dob" name="dob" required>
+                                </div>
+
+								<div class="mb-3">
+									<label for="password" class="form-label fs-5 mb-3">Password</label>
+									<input type="password" class="form-control" id="password" name="password" required>
+								</div>
+
+                                <div class="mb-3">
+                                    <label for="confirm_password" class="form-label fs-5 mb-3">Confirm Password</label>
+                                    <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
+                                </div>
+                        
+								<div class="mb-3">
+									<button type="submit" class="btn btn-success btn-block d-grid col-6 mx-auto w-100">Continue</button>
+								</div>
+
+							</form>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
 </body>
 </html>
