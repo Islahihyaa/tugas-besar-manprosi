@@ -8,6 +8,17 @@
 </head>
 
 <body class="registration-page">
+	
+	<!-- <div>
+	<?php
+		if(isset($_POST['submit'])) {
+			echo "user submit";
+		}
+	?>
+	</div> -->
+
+
+
 	<div class="container">
 		<div class="position-absolute top-0 end-0">
 			<img class="image" src="../img/image3.png" alt="logo">
@@ -61,7 +72,7 @@
                                 </div>
                         
 								<div class="mb-3">
-									<button type="submit" class="btn btn-success btn-block d-grid col-6 mx-auto w-100">Continue</button>
+									<button type="submit" class="btn btn-success btn-block d-grid col-6 mx-auto w-100" name="submit">Continue</button>
 								</div>
 
 							</form>
