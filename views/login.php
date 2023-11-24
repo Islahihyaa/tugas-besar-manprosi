@@ -1,3 +1,24 @@
+<?php 
+
+session_start();
+
+require '../config/loginController.php';
+
+if (isset($_COOKIE['user_id'])) {
+    rememberMe($_COOKIE);
+}
+
+if($_SERVER['REQUEST_METHOD'] == "POST") {
+    login($_POST);
+}
+
+if (isset($_SESSION['login'])) {
+    header("Location: Dashboard.php");
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +31,7 @@
 <body class="my-login-page">	
 	<div class="container">
 		<div class="position-absolute top-0 end-0">
-			<img class="image" src="../img/image3.png" alt="logo">
+			<img class="image" src="../img/image 3.png" alt="logo">
 		</div>
 	</div>
 
@@ -24,7 +45,15 @@
 					
 					<div class="card mt-5">
 						<div class="card-body">
-							<form method="POST" class="my-login-validation" novalidate="">
+
+						<?php if(isset($_SESSION['message']) and isset($_SESSION['color'])) { ?>
+                            <div class="alert alert-<?= $_SESSION['color']?> " role="alert" >
+                                <?= $_SESSION['message'] ?>
+                            </div>
+
+                        <?php unset($_SESSION['message']);} ?>
+
+							<form method="POST" class="my-login-validation" action="">
 								<div class="mb-3">
 									<label for="email" class="form-label fs-5 mb-3">Email Address</label>
 									<input type="email" class="form-control" id="email" name="email" required autofocus>
@@ -49,7 +78,7 @@
 								</div>
 
 								<div class="mb-3 text-center">
-									Don't have an account? <a href="register.html" class="text-success">Sign up here</a>
+									Don't have an account? <a href="registrasi.php" class="text-success">Sign up here</a>
 								</div>
 							</form>
 					</div>

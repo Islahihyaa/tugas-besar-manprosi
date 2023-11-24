@@ -4,18 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/Dashboard.css">
 </head>
 <body>
 
 <div class="sidebar">
     <img src="../img/Group 1834.png" class="logo">
-    <ul class="nav flex-column">
-        <li class="nav-item">
+    <table class="nav flex-column">
+        <tr class="nav-item">
             <a class="nav-link active option" href="Dashboard.php">Dashboard</a>
-        </li>
-        <li class="nav-item">
+        </tr>
+        <tr class="nav-item">
+            <a class="nav-link active option" href="Detailroom.php">Detail room</a>
+        </tr>
+        <tr class="nav-item">
             <div class="dropdown">
                 <a class="nav-link option dropdown-toggle" href="" role="button" id="bookingDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Booking
@@ -26,7 +29,7 @@
                     <a class="dropdown-item" href="Digitalsupplychain.php"><img src="../img/topi.png"> Digital supply chain</a>
                 </div>
             </div>
-        </li>
+        </table>
     </ul>
 </div>
 
