@@ -29,7 +29,7 @@ if (mysqli_num_rows($result) == 0) {
     
 } else {
     $_SESSION['message'] = 'Email sudah terdaftar';
-    header('Location: ../views/register.php');
+    header('Location: ../views/registrasi.php');
 }
 
 ?>
