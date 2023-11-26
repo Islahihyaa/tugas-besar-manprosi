@@ -18,6 +18,7 @@ function login($input) {
         if (password_verify($password, $data['password'])) {
             $_SESSION["login"] = true;
             $_SESSION["user_id"] = $data['user_id'];
+            $_SESSION["jenisuser"] = $data['jenisuser'];
 
             if(isset($input["remember"])) {
                 setcookie("user_id", $data['user_id'], time() + 3600, "/");

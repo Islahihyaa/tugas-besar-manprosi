@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require '../config/connect.php';
+require '../config/auth/connect.php';
 
 if (!isset($_SESSION['login'])) {
     header("Location: login.php");

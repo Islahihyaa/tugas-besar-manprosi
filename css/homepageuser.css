@@ -1,0 +1,81 @@
+body {
+    background-image: url(../img/bgtelkom.png);
+    background-size: cover;
+    margin: 0;
+}
+
+.nav-link {
+    font-family: Poppins; 
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+
+.content{
+    margin: 3px;
+}
+
+.banner-container {
+    position: fixed;
+    top: 40%;
+    transform: translateY(-50%); 
+    left: 0; 
+    padding: 20px; 
+}
+h1 {
+    font-size: 85px;
+}
+
+h3 {
+    font-size: 42px;
+}
+
+.button {
+    position: fixed;
+    left: 25px;
+    top: 55%;
+    
+}
+
+.hamburger-button {
+    background-color: #D9D9D9; 
+    border: none;
+    border-radius: 7px;
+    cursor: pointer; 
+    margin: 6px;
+    padding-bottom: 4px;
+    padding-left: 3px;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.outer-border {
+    border: 2px solid #00989E;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.5); 
+}
+
+.click {
+    color: #00989E; 
+    font-size: 42px; 
+    font-family: 'Nunito', sans-serif; 
+    font-weight: 700; 
+    line-height: 54.60px; 
+    letter-spacing: 0.04px; 
+    word-wrap: break-word;
+    
+}
+
+.text {
+    color: #00989E;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600; 
+    line-height: 31.20px; 
+    letter-spacing: 0.02px; 
+    word-wrap: break-word;
+}

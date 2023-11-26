@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 session_start();
 
@@ -13,7 +13,11 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 }
 
 if (isset($_SESSION['login'])) {
-    header("Location: homepage.php");
+    if ($_SESSION['jenisuser'] == 'Admin') {
+        header("Location: homepageadmin.php");
+    } else {
+        header("Location: homepageuser.php");
+    }
 }
 
 ?>
