@@ -2,7 +2,7 @@
 
 session_start();
 
-require '../config/loginController.php';
+require '../config/auth/loginController.php';
 
 if (isset($_COOKIE['user_id'])) {
     rememberMe($_COOKIE);
@@ -13,7 +13,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 }
 
 if (isset($_SESSION['login'])) {
-    header("Location: navbar.php");
+    header("Location: homepage.php");
 }
 
 ?>
@@ -68,7 +68,7 @@ if (isset($_SESSION['login'])) {
 
 								<div class="mb-3">
 									<div class="form-check">
-										<input type="checkbox" class="form-check-input" id="remember">
+										<input type="checkbox" id="check" class="form-check-input" name="remember">
 										<label class="form-check-label" for="remember">Remember Me</label>
 									</div>
 								</div>

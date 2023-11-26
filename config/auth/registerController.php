@@ -21,15 +21,16 @@ if (mysqli_num_rows($result) == 0) {
     if($insert) {
         $_SESSION['message'] = 'Pendaftaran success';
         $_SESSION['color'] = 'success';
-        header('Location: ../views/login.php');
+        header('Location: /../TUBES_WAD/views/login.php');
         
     } else {
         $_SESSION['message'] = "Pendaftaran gagal";
+        header('Location: /../TUBES_WAD/views/registrasi.php');
     }
     
 } else {
     $_SESSION['message'] = 'Email sudah terdaftar';
-    header('Location: ../views/registrasi.php');
+    header('Location: /../TUBES_WAD/views/registrasi.php');
 }
 
 ?>

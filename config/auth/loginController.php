@@ -2,15 +2,15 @@
 
 require 'connect.php';
 
-
 function login($input) {
 
     global $connection;
 
         $email = $input['email'];
         $password = $input['password'];
-
-    $result = mysqli_query($connection, $query);
+    
+    $cekemail = "SELECT * FROM user WHERE email = '$email'";
+    $result = mysqli_query($connection, $cekemail);
 
     if (mysqli_num_rows($result) == 1 ) {
         $data = mysqli_fetch_assoc($result);
@@ -36,14 +36,13 @@ function login($input) {
         
 }
 
-function rememberMe($cookie)
-{
+function rememberMe($cookie) {
 
     global $connection;
 
     $id = $cookie['user_id'];    
 
-    $query = "SELECT * FROM users WHERE user_id = '$id'";
+    $query = "SELECT * FROM user WHERE user_id = '$id'";
     $result = mysqli_query($connection, $query);
 
     if(mysqli_num_rows($result) == 1) {

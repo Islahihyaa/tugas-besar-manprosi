@@ -46,7 +46,7 @@
 									</div>
 								<?php unset($_SESSION['message']);} ?>
 							
-							<form method="POST" action="../config/registerController.php" >
+							<form method="POST" action="../config/auth/registerController.php" >
 
 								<div class="mb-3">
 									<label for="fullname" class="form-label fs-5 mb-3">Full Name</label>
