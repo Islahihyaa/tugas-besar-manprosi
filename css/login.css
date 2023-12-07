@@ -2,7 +2,6 @@ html,body {
 	height: 50%;
     margin: 0;
     padding: 0;
-    overflow: visible;
 }
 
 body.my-login-page {
@@ -17,10 +16,6 @@ body.my-login-page {
 	justify-content: center;
 	padding-right: 20px; 
 
-}
-
-.my-login-page .row-navbar {
-	position: absolute;
 }
 
 .content {

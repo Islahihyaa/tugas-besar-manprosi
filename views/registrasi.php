@@ -7,7 +7,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Register Page</title>
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/login.css">
 </head>
 
@@ -61,6 +61,11 @@
                                 <div class="mb-3">
                                     <label for="dob" class="form-label fs-5 mb-3">Date of Birth</label>
                                     <input type="date" class="form-control" id="dob" name="dob" required>
+                                </div>
+
+								<div class="mb-3">
+                                    <label for="nim" class="form-label fs-5 mb-3">NIM</label>
+                                    <input type="number" class="form-control" id="nim" name="nim" required>
                                 </div>
 
 								<div class="mb-3">

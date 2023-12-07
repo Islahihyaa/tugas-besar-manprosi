@@ -26,8 +26,9 @@ if(mysqli_num_rows($result) ==  1 ) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
 
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../css/homepageuser.css">
+
 </head>
 
 <body>
@@ -72,8 +73,10 @@ if(mysqli_num_rows($result) ==  1 ) {
             
         </div>
         <div class="button">
-            <button type="button" class="border-container outer-border"> <span class="text">Booking</span> </button>
+            <a type="submit" class="border-container outer-border text-decoration-none" href="selectroom.php"> <span class="text">Booking</span> </a>
         </div>
+
+
         
     </div>
 

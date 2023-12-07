@@ -9,13 +9,14 @@ $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 $jenisuser = "Mahasiswa";
 $nama = $_POST['nama'];
 $dob = $_POST['dob'];
+$nim = $_POST['nim'];
 
 $cekemail = "SELECT * FROM user WHERE email = '$email'";
 $result = mysqli_query($connection,$cekemail);
 
 
 if (mysqli_num_rows($result) == 0) {
-    $insertdata = "INSERT INTO user (email, password, jenisuser, nama, dob) VALUES ('$email', '$password', '$jenisuser', '$nama',  '$dob' )";
+    $insertdata = "INSERT INTO user (email, password, jenisuser, nama, dob, nim) VALUES ('$email', '$password', '$jenisuser', '$nama',  '$dob' , '$nim')";
     $insert = mysqli_query($connection, $insertdata);
 
     if($insert) {

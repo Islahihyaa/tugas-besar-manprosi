@@ -1,0 +1,110 @@
+.logo{
+    width: 110px;
+    height: auto;
+}
+
+.garis{
+    width: 1px;
+    height: 30px;
+    background-color: grey;
+    margin-top: auto;
+}
+
+.gmbrfakultas{
+    height: 30px;
+}
+
+.tab {
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    display: flex;
+}
+
+.shape {
+    width: 277px;
+    height: 52px;
+    border-radius: 30px;
+    background-color: #13884C;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+.line{
+    background-color: #D9D9D9;
+    width: 51px;
+    height: 4px;
+}
+.shape span {
+    color: #ffff;
+    font-size: 16px;
+    font-family: 'Poppins';
+}
+.selection{
+    display:flex;
+    justify-content: center;
+    height: 30px;
+    width: auto;
+
+}
+
+.gambar{
+    width: 227px;
+    height: 25px;
+    background-color: #13884C;
+    border-radius: 10px;
+}
+.font{
+    color: white;
+    text-align: center;
+}
+
+.abu{
+    width: 51px;
+    height: 4px;
+    background-color: gray;
+    margin-top: 10px;
+    
+}
+
+h2 {
+    font-size: small;
+    text-align: center;
+    clear: both;
+}
+
+.main{
+    display: flex;
+    grid-gap: 50px;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+     
+}
+
+.room{
+    width: 203px;
+    height: 98px;
+    background-color: white;
+    text-align: center;
+    padding-top: 32px;
+    border-radius: 5px;
+}
+
+.maincenter{
+    padding-top: 50px;
+    display: flex;
+    grid-gap: 50px;
+    justify-content: center;
+}
+
+.mainlast{
+    padding-left: 150px;
+    padding-top: 50px;
+}
+
+.btn{
+    width: 203px;
+    height: 98px;
+}
